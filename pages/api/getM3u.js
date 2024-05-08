@@ -61,8 +61,8 @@ const generateM3u = async (ud) => {
     m3uStr = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/mitthu786/tvepg/main/tataplay/epg.xml.gz"\n\n';
 
 
-  m3uStr = '#EXTINF:-1 tvg-logo="https://i.postimg.cc/KcpbPSGG/star-sprts-tamil-e1496057710686-416x234-modified.png" group-title="IPL  M1 | Cricket/Live" group-logo="",Star Sports 1 HD TAMIL 
-https://c2ag.short.gy/index_vaathala.m3u8 '\n\n';
+ m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/pT9Y5tP2/1080x720-1564282-tata-ipl.jpg" group-title="IPL M1 | Cricket/Live" group-logo="",HINDI (jio) https://c2ag.short.gy/hindi.m3u8\n';
+m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/pT9Y5tP2/1080x720-1564282-tata-ipl.jpg" group-title="IPL M1 | Cricket/Live" group-logo="",KANNADA (jio) https://c2ag.short.gy/kannada.m3u8\n';
 
 
   for (let i = 0; i < chansList.length; i++) {
