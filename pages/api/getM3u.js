@@ -70,13 +70,7 @@ const generateM3u = async (ud) => {
     m3uStr += chansList[i].stream_url + '\n\n';
 }
 
-       _________ JOIN @vaathala1  _______
-
 m3uStr += '#EXTINF:-1  group-logo="https://od.lk/s/OV8yMTQ5MzMzMzRf/vt%20.PNG"  tvg-logo="https://od.lk/s/OV8yMTQ5MzMzMzRf/vt%20.PNG" group-title="𝙏𝙀𝙇𝙀𝙂𝙍𝘼𝙈 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 | @𝙫𝙖𝙖𝙩𝙝𝙖𝙡𝙖1" group-logo="",𝙅𝙤𝙞𝙣 @𝙫𝙖𝙖𝙩𝙝𝙖𝙡𝙖1\n';
-
-                      
-                                
-                                        _________IPL T20 | Cricket M1_______
 
 m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/KcpbPSGG/star-sprts-tamil-e1496057710686-416x234-modified.png" group-title="IPL  M1 | Cricket/Live" group-logo="",Star Sports 1 HD TAMIL 
 https://c2ag.short.gy/index_vaathala.m3u8\n';
@@ -117,7 +111,6 @@ https://prod-ent-live-gm.jiocinema.com/out/v1/a491dee5aa0f4e29a197ef1c043a1084/m
 m3uStr += '#EXTINF:-1 tvg-logo="https://substack-post-media.s3.amazonaws.com/public/images/f5e1e25a-ff00-4345-bb91-4c235617154b_1200x609.jpeg" group-title="IPL  M1 | Cricket/Live" group-logo="",SPLIT (Multi Cam)
 https://prod-ent-live-gm.jiocinema.com/out/v1/1893486ccd08469e82b3fab606921c26/master.m3u8\n';
 
-              _________IPL T20 | Cricket M2_______
 
 m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/KcpbPSGG/star-sprts-tamil-e1496057710686-416x234-modified.png" group-title="IPL M2 | Cricket/Live" group-logo="",Star Sports 1 HD TAMIL 
 https://c2ag.short.gy/index_vaathala.m3u8\n';
