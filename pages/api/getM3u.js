@@ -61,10 +61,6 @@ const generateM3u = async (ud) => {
     m3uStr = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/mitthu786/tvepg/main/tataplay/epg.xml.gz"\n\n';
 
 
- m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/pT9Y5tP2/1080x720-1564282-tata-ipl.jpg" group-title="IPL M1 | Cricket/Live" group-logo="",HINDI (jio) https://c2ag.short.gy/hindi.m3u8\n';
-m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/pT9Y5tP2/1080x720-1564282-tata-ipl.jpg" group-title="IPL M1 | Cricket/Live" group-logo="",KANNADA (jio) https://c2ag.short.gy/kannada.m3u8\n';
-
-
   for (let i = 0; i < chansList.length; i++) {
     m3uStr += '#EXTINF:-1 tvg-id="' + chansList[i].id.toString() + '" ';
     m3uStr += 'group-title="' + (chansList[i].group_title) + '", tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/' + (chansList[i].tvg_logo) + '", ' + chansList[i].name + '\n';
@@ -74,6 +70,10 @@ m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/pT9Y5tP2/1080x720-1564282-t
     m3uStr += '#EXTHTTP:{"cookie":"' + chansList[i].hma + '"}\n';
     m3uStr += chansList[i].stream_url + '\n\n';
 }
+
+m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/pT9Y5tP2/1080x720-1564282-tata-ipl.jpg" group-title="IPL M1 | Cricket/Live" group-logo="",HINDI (jio) https://c2ag.short.gy/hindi.m3u8\n';
+m3uStr += '#EXTINF:-1 tvg-logo="https://i.postimg.cc/pT9Y5tP2/1080x720-1564282-tata-ipl.jpg" group-title="IPL M1 | Cricket/Live" group-logo="",KANNADA (jio) https://c2ag.short.gy/kannada.m3u8\n';
+
 
     console.log('all done!');
     return m3uStr;
