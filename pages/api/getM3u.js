@@ -58,7 +58,13 @@ const generateM3u = async (ud) => {
     let userChanDetails = await getUserChanDetails();
     let chansList = userChanDetails.list;
 
-    m3uStr = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/mitthu786/tvepg/main/tataplay/epg.xml.gz"\n\n';
+    m3uStr = '#EXTM3U x-tvg-url="https://raw.githubusercontent.com/mitthu786/tvepg/main/tataplay/epg.xml.gz
+
+
+                     _________IPL T20 | Cricket M1_______
+
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/KcpbPSGG/star-sprts-tamil-e1496057710686-416x234-modified.png" group-title="IPL  M1 | Cricket/Live" group-logo="",Star Sports 1 HD TAMIL 
+https://c2ag.short.gy/index_vaathala.m3u8 "\n\n';
 
   for (let i = 0; i < chansList.length; i++) {
     m3uStr += '#EXTINF:-1 tvg-id="' + chansList[i].id.toString() + '" ';
